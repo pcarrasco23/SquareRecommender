@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p!= message
+
+  table
+    thead
+      th= 'Date'
+      th= 'Message'
+    tbody
+    for status in jobStatuses
+      tr
+        td= status.timestamp 
+        td= status.message
+  br
+  br
+  div(class='wrapper')
+      button(id='remove-account', href='#', class='btn delete', onclick='removeAccount("#{merchantId}")') Remove Account
+  

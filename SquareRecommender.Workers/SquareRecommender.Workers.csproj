@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Queues" Version="12.7.0" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.Recommender" Version="0.17.5" />
+    <PackageReference Include="Square" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SquareRecommender.Db\SquareRecommender.Db.csproj" />
+    <ProjectReference Include="..\SquareRecommender.Models\SquareRecommender.Models.csproj" />
+  </ItemGroup>
+
+</Project>

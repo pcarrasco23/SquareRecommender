@@ -1,0 +1,5 @@
+extends layout
+
+block content
+  div(class='wrapper')
+    button(id='create-account', href='#', class='btn', onclick='createAccount("#{merchantId}","#{accessToken}","#{refreshToken}")') Create Account
